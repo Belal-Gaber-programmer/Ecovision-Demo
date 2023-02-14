@@ -1,0 +1,35 @@
+1- HTML
+2- CSS
+3- Javascript (JS)
+4- موقع Canva
+5- مكتبة Tensorflow tfjs
+6- Yarn
+7- Youtube (server)
+8- مكتبة swiper.js
+9- مكتبة swiper.min.css
+10- مكتبة normalize.css
+11- مكتبة jquery.js
+12- موقع smoothshadow
+13- موقع pexels.com
+14- موقع unsplash
+15- موقع Teachablemachine
+16- مكتبة Fontawsome للايقونات الخطية
+17- Googlefonts
+18- اسم الخط المستخدم (Cairo)
+19- مكتبة Animate.css
+20- Artificial inteligenc (AI)
+21- Machine learning (ML)
+22- Git
+23- Github
+24- برنامج Cmder
+25- HTML online validator
+26- Json
+27- node.js
+28- AI Models from Teachablemachine
+29- Configration files for the voice assistant
+30- Visual Studio Code (text editor)
+31- APIs
+32- davinci-003
+33- chat gpt dataset
+34- auto-py-to-exe (to convert the voice assistant from .py to .exe)
+35- CSS online validator

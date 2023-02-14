@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecovision | Climate Change</title>
+    <!-- Fontawsome library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- normalize library -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- climate-changes css file -->
+    <link rel="stylesheet" href="CSS/climate-changes.css" />
+    <!-- website icon -->
+    <link rel="icon" href="images/Ecovision.icon" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start loading animation section -->
+    <div class="loading">
+      <div class="dot dot-1"></div>
+      <div class="dot dot-2"></div>
+      <div class="dot dot-3"></div>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        const loading = document.querySelector(".loading");
+        loading.className += " hidden"; //class loading + class hidden
+      });
+    </script>
+    <!-- End loading animation section -->
+
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/Ecovision.png" alt="logo" /></a>
+        </div>
+        <div class="searchbox">
+          <div class="icon">
+            <i class="search fa fa-search" aria-hidden="true"></i>
+          </div>
+          <div class="input">
+            <input
+              type="text"
+              placeholder="search in google"
+              id="search"
+              onkeypress="searchGoogle(event)"
+            />
+            <i class="clear fa fa-times"></i>
+          </div>
+        </div>
+        <script>
+          let search = document.querySelector(".search");
+          let clear = document.querySelector(".clear");
+
+          search.onclick = function () {
+            document.querySelector(".searchbox").classList.toggle("active");
+          };
+
+          clear.onclick = function () {
+            document.getElementById("search").value = "";
+          };
+        </script>
+        <script>
+          function searchGoogle(event) {
+            // Check if the "Enter" key was pressed
+            if (event.keyCode === 13) {
+              // Get the value of the search box
+              let searchValue = document.getElementById("search").value;
+
+              // Construct the Google search URL
+              let searchUrl =
+                "https://www.google.com/search?q=" +
+                encodeURIComponent(searchValue);
+
+              // Open the Google search URL in a new tab
+              window.open(searchUrl, "_blank");
+            }
+          }
+        </script>
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li>
+              <a href="http://localhost:3000" target="_blank"
+                >Voice-Assistant</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start components -->
+    <div class="components">
+      <div class="container">
+        <div class="components-content">
+          <h2 class="title">Climate Change</h2>
+          <div class="subtitle" id="subtitle">
+            <h2>Introduction</h2>
+          </div>
+          <div class="text">
+            <p class="p1">
+              Climate change is a major environmental problem thatis caused by
+              human activities such as burning fossil fuels and deforestation.
+              These actions result in the release of greenhouse gases, like
+              carbon dioxide and methane, which trap heat and cause long-term
+              shifts in temperature and weather patterns. Environmental problems
+              also include air and water pollution, loss of biodiversity, and
+              other negative impacts of human activities on the natural world.
+              Solving these problems requires a combination of individual
+              behavior change, government policies, and technological
+              innovation.
+            </p>
+          </div>
+          <div class="video">
+            <iframe
+              width="425"
+              height="239.0625"
+              src="https://www.youtube.com/embed/G4H1N_yXBiA?rel=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="subtitle-1" id="subtitle-1">
+            <h2>What is climate change?</h2>
+          </div>
+          <div class="text-1">
+            <p class="respond">
+              Climate change refers to long-term shifts in globaltemperatures
+              and weather patterns caused by human activities and natural
+              phenomena. The main driver of climate change since the 1800s is
+              the burning of fossil fuels like coal, oil, and gas, which
+              releases greenhouse gases like carbon dioxide and methane into the
+              atmosphere. These gases trap heat and warm the planet, leading to
+              a rise in global temperatures and changes in weather patterns.
+              Climate change can cause impacts such as rising sea levels, more
+              frequent and intense heat waves, hurricanes and storms, and
+              changes to ecosystems and agriculture.
+            </p>
+          </div>
+          <div class="subtitle-2" id="subtitle-2">
+            <h2>What are sources of greenhouse gases?</h2>
+          </div>
+          <div class="text-2">
+            <p class="sub-subtitle">
+              Greenhouse gases are the main driver of climate change.Some common
+              sources of greenhouse gases are:
+            </p>
+            <p>
+              1- Burning fossil fuels: The burning of coal, oil, and natural gas
+              for energy releases large amounts of carbon dioxide into the
+              atmosphere.
+            </p>
+            <p>
+              2- Agriculture and livestock farming: Livestock farming produces
+              methane, a potent greenhouse gas, while the use of fertilizers in
+              agriculture releases nitrous oxide.
+            </p>
+            <p>
+              3- Deforestation: Trees absorb carbon dioxide from the atmosphere,
+              so cutting down forests reduces their ability to remove this
+              greenhouse gas from the air.
+            </p>
+            <p>
+              4- Industrial processes: Certain industrial processes, such as the
+              production of cement, release signiﬁcant amounts of carbon
+              dioxide.
+            </p>
+            <p>
+              5- Landﬁlls: Landﬁlls are a source of methane emissions from
+              decomposing organic waste.
+            </p>
+            <p>
+              6- Transportation: The burning of gasoline and diesel fuel by
+              cars, trucks, and other vehicles releases carbon dioxide and other
+              pollutants into the atmosphere.
+            </p>
+          </div>
+          <div class="image">
+            <img
+              class="img-1"
+              src="images/climate changes/التغيرات-المناخية-1.png"
+              alt="صورة للتغيرات المناخية"
+              title="التغيرات المناخية"
+            />
+            <img
+              class="img-2"
+              src="images/climate changes/التغيرات-المناخية-2.png"
+              alt="صورة للتغيرات المناخية"
+              title="التغيرات المناخية"
+            />
+          </div>
+          <div class="subtitle-3" id="subtitle-3">
+            <h2>What are the causes of climate change?</h2>
+          </div>
+          <div class="text-3">
+            <p>
+              The main cause of climate change is the release ofgreenhouse gases
+              into the atmosphere. These gases trap heat and warm the planet,
+              leading to a rise in global temperatures and changes in weather
+              patterns. The main human activities that release greenhouse gases
+              are:
+            </p>
+            <p>
+              1- Burning fossil fuels: The burning of coal, oil, and natural gas
+              for energy releases large amounts of carbon dioxide into the
+              atmosphere.
+            </p>
+            <p>
+              2- Agriculture and livestock farming: Livestock farming produces
+              methane, a potent greenhouse gas, while the use of fertilizers in
+              agriculture releases nitrous oxide.
+            </p>
+            <p>
+              3- Deforestation: Trees absorb carbon dioxide from the atmosphere,
+              so cutting down forests reduces their ability to remove this
+              greenhouse gas from the air.
+            </p>
+            <p>
+              4- Industrial processes: Certain industrial processes, such as the
+              production of cement, release signiﬁcant amounts of carbon
+              dioxide.
+            </p>
+            <p>
+              5- Landﬁlls: Landﬁlls are a source of methane emissions from
+              decomposing organic waste.
+            </p>
+            <p>
+              6- Transportation: The burning of gasoline and diesel fuel by
+              cars, trucks, and other vehicles releases carbon dioxide and other
+              pollutants into the atmosphere.
+            </p>
+            <p>
+              In addition to human activities, natural phenomena such as
+              volcanic eruptions and changes in the Earth's orbit can also
+              contribute to climate change. However, the scale and pace of
+              current climate change is primarily due to human activities.
+            </p>
+          </div>
+          <div class="subtitle-4" id="subtitle-4">
+            <h2>The Effects of climate change on Earth</h2>
+          </div>
+          <div class="text-4">
+            <p class="sub-subtitle-1">
+              The effects of climate change on Earth are wide-rangingand can be
+              signiﬁcant. Some of the most notable impacts are:
+            </p>
+            <p>
+              1- Rising sea levels: As the Earth's temperature increases, ice
+              caps and glaciers are melting, causing sea levels to rise and
+              threatening coastal communities with ﬂooding.
+            </p>
+            <p>
+              2- Extreme weather events: Climate change can cause more frequent
+              and intense heat waves, hurricanes, and droughts.
+            </p>
+            <p>
+              3- Changes in ecosystems: Rising temperatures and changing weather
+              patterns can disrupt ecosystems and harm wildlife.
+            </p>
+            <p>
+              4- Agriculture: Climate change can affect crop yields and the
+              productivity of agricultural lands, leading to food shortages and
+              higher prices.
+            </p>
+            <p>
+              5- Human health: Rising temperatures can lead to increased air
+              pollution and the spread of diseases carried by insects and
+              animals.
+            </p>
+            <p>
+              6- Displacement of people: Rising sea levels and extreme weather
+              events can displace millions of people from their homes and
+              communities.
+            </p>
+            <p>
+              7- Economic costs: Climate change can lead to signiﬁcant economic
+              costs, including damage to infrastructure, loss of productivity,
+              and increased costs for health and emergency services.
+            </p>
+            <p>
+              These impacts can have far-reaching and long-lasting effects, and
+              it is important for individuals, governments, and businesses to
+              take action to mitigate and adapt to the impacts of climate
+              change.
+            </p>
+          </div>
+          <div class="subtitle-5" id="subtitle-5">
+            <h2>Suggestions for reducing climate change effects</h2>
+          </div>
+          <div class="text-5">
+            <p>
+              There are several actions that individuals, governments,and
+              businesses can take to reduce the effects of climate change:
+            </p>
+            <p>
+              1- Reduce greenhouse gas emissions: One of the most effective ways
+              to reduce the effects of climate change is to reduce the amount of
+              greenhouse gases released into the atmosphere. This can be done by
+              using renewable energy sources, improving energy eﬃciency, and
+              reducing deforestation.
+            </p>
+            <p>
+              2- Use public transportation or electric vehicles: Cars and trucks
+              are signiﬁcant sources of greenhouse gas emissions, so using
+              public transportation or switching to electric vehicles can
+              signiﬁcantly reduce emissions.
+            </p>
+            <p>
+              3- Eat a plant-based diet: Livestock farming is a major source of
+              greenhouse gas emissions, so eating a plant-based diet can help
+              reduce emissions and mitigate the effects of climate change.
+            </p>
+            <p>
+              4- Support clean energy: Governments and businesses can invest in
+              clean energy technologies, such as wind and solar power, to reduce
+              emissions and support the transition to a low-carbon economy.
+            </p>
+            <p>
+              5- Improve energy eﬃciency: Improving energy eﬃciency in buildings
+              and industry can reduce emissions and save money.
+            </p>
+            <p>
+              6- Protect and restore forests: Forests play a critical role in
+              removing carbon dioxide from the atmosphere, so protecting and
+              restoring forests is an important step in mitigating the effects
+              of climate change.
+            </p>
+            <p>
+              7- Raise awareness: Raising public awareness about the causes and
+              effects of climate change is essential for building support for
+              action to reduce emissions and mitigate the impacts of climate
+              change.
+            </p>
+            <p>
+              It is important for individuals, governments, and businesses to
+              take action to reduce the effects of climate change, as the
+              impacts of a rapidly changing climate can be far-reaching and
+              long-lasting.
+            </p>
+          </div>
+          <div class="subtitle-6" id="subtitle-6">
+            <h2>Conclusion</h2>
+          </div>
+          <div class="text-6">
+            <p>
+              In conclusion, climate change is a pressing issuethat requires
+              immediate action to mitigate its negative impacts. The effects of
+              climate change, including rising sea levels, extreme weather
+              events, and changes in ecosystems, have far-reaching and
+              long-lasting impacts on the Earth and its inhabitants. To reduce
+              the effects of climate change, it is important for individuals,
+              governments, and businesses to take a multifaceted approach that
+              includes reducing greenhouse gas emissions, supporting clean
+              energy, improving energy eﬃciency, protecting and restoring
+              forests, and raising public awareness about the causes and effects
+              of climate change. Addressing climate change is a global challenge
+              that requires collective action, but by taking steps to reduce our
+              carbon footprint and support sustainable practices, we can help
+              protect the planet for future generations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End components -->
+  </body>
+</html>
